@@ -25,8 +25,8 @@ const Wrapper = styled.nav`
 
     .navbar {
         background: var(--clr-secondary);
+        flex-grow: 1;
         height: 3rem;
-        width: 100vw;
     };
 
     .nav-center {
@@ -39,8 +39,7 @@ const Wrapper = styled.nav`
     };
 
     .company-logo {
-        height: auto;
-        width: 2rem;
+       width: calc(4vw + 4vh);  
     };
 
     .toggle-btn {
@@ -71,7 +70,7 @@ const Wrapper = styled.nav`
         };
 
         .nav-links li {
-            margin-right: calc(2rem + 2vw);
+            margin-left: calc(2rem + 2vw);
             list-style: none;
         };
 
@@ -118,6 +117,10 @@ const Wrapper = styled.nav`
         .nav-links a:active::after {
             transform: scaleX(1);
         };
+
+        .company-logo {
+            width: calc(2vw + 2vh);
+       };
     };
 `;
 

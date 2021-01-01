@@ -12,6 +12,7 @@ const Banner = () => {
                     <Link to='/contact' className='btn'>
                         contact me
                     </Link>
+               
             </div>
         </Wrapper>
     )
@@ -20,19 +21,15 @@ const Banner = () => {
 const Wrapper = styled.div`
 
     .banner {
-        background: var(--clr-main-green);
-        opacity: .8;
-        height: calc(10rem + 10vmax);
-        padding: calc(1.5rem + 2vw);
-        animation: banner 2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        background-color: var(--clr-main-green);
+        height: 40vh;
+        padding: calc(1.6rem + .6667vw);
+        color: var(--clr-main-white);
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-
-        h1, h2 {
-            text-transform: capitalize;
-            color: var(--clr-main-white);
-        };
+        justify-content: space-around;
+        text-transform: capitalize;
+        animation: banner 2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     };
 
     @keyframes banner {
@@ -44,13 +41,13 @@ const Wrapper = styled.div`
             transform: translateX(0);
             opacity: .8;
         };
-    };
+    }; 
 
     @media screen and (min-width: 768px) {
         .banner h1 {
-            margin-bottom: 4rem;
+            margin-bottom: 4vh;
         };
-    };
+    }; 
 
 `
 

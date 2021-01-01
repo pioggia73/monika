@@ -16,14 +16,14 @@ const Background = ({isOpen}) => {
 const Wrapper = styled.section`
 
     .bcg {
-        background: url(${backgroundImage});
-        background-position: 95%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        min-height: calc(100vh - 3rem);
-        display: flex;
-        justify-content: flex-start;
         align-items: center;
+        background-image: url(${backgroundImage});
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        height: calc(100vh - 3rem);
+        justify-content: flex-start;
     };
 `
 
